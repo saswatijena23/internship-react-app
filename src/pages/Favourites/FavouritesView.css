@@ -1,0 +1,37 @@
+.favourites {
+  padding: 1.5rem 1.75rem 2.5rem;
+}
+
+.favourites__status,
+.favourites__error,
+.favourites__empty {
+  margin: 0 0 1rem;
+}
+
+.favourites__error {
+  color: #b42318;
+}
+
+.favourites__empty {
+  color: #5a6b80;
+}
+
+.favourites__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 640px) {
+  .favourites {
+    padding: 1rem;
+  }
+
+  .favourites__grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+}

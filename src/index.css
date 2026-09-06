@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: 248 250 252;
+  --color-foreground: 15 23 42;
+  --color-primary: 79 70 229;
+  --color-muted: 100 116 139;
+  --color-border: 226 232 240;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: 15 23 42;
+    --color-foreground: 241 245 249;
+    --color-primary: 129 140 248;
+    --color-muted: 148 163 184;
+    --color-border: 51 65 85;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', system-ui, sans-serif;
+  color: #1a2332;
+  background: #f5f7fa;
+}
